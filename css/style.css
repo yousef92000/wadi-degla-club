@@ -1,0 +1,441 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+* , *::before , *::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+:root{
+    scroll-behavior: smooth;
+}
+main{
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+/*start header*/
+header{
+    width: 100%;
+    height: 70px;
+}
+.container{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg , #020202 ,  #212121 , #3a3a3a ,  #616161 );
+}
+header nav{
+    width: 40%;
+    height: 70px;
+    overflow: hidden; 
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+nav ul a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 70px;
+    padding-right: 50px;
+    color: #fff;
+}
+header .icon{
+    width: 30%;
+    padding-left: 30px;
+}
+header img{
+    width: 10%;
+}
+/*end header*/
+/*start section 1*/
+.select1{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    overflow: hidden;
+    background: #fddd00;
+    position: relative;
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    background: #000;
+    clip-path: circle(50% at 50% 50%);
+}
+.banner img{
+    width: 85%;
+    position: absolute;
+    right: 8%;
+    bottom: 0; 
+}
+/*end section 1*/
+/*start section 2*/
+.select2{
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+.all{
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: -50px;
+}
+.block , .block1 , .block2 , .block3{
+    width: 300px;
+    height: 150px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+.block{
+    background:#fff url(../images/swimmingacademy.jpg) no-repeat center/100% ;
+}
+.block1{
+    background:#fff url(../images/footballacademy.jpg) no-repeat center/100%  ;
+}
+.block2{
+    background:#fff url(../images/tennisacademy.jpg) no-repeat center/100%  ;
+}
+.block3{
+    background:#fff url(../images/squashacademy.jpg) no-repeat center/100%  ;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: #ff05;
+    clip-path: circle( 0% at 0% 0%);
+    transition: 1s;
+    position: absolute;
+    top: 0; 
+}
+.block3:hover .overlay , .block2:hover .overlay , .block1:hover .overlay , .block:hover .overlay{
+    clip-path: circle(12% at 0% 0% );
+}
+/*end section 2*/
+/*start section 3*/
+.select3{
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+}
+.divtext h2{
+    color: #404b9b;
+    font-size: 30px;
+}
+.select3 .divtex h2{
+    font-size:18px ;
+    color: #404b9b;
+}
+.divtex p{
+    color: #404b9b;
+}
+.collection{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.divtex{
+    width: 40%;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+}
+.block5{
+    width: 45%;
+    height: 250px;
+    margin: 0 auto; 
+    overflow: hidden;
+    background: url(../images/about.jpg) no-repeat center/100%;
+    border-radius: 40px 40px 0px 0px;
+}
+.overlay5{
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    background: #ccc5;
+    clip-path: circle( 0% at 50% 55%);
+    transition: 1s;
+}
+.block5:hover .overlay5{
+    clip-path: circle(73% at 50% 38% );
+}
+/*end section 3*/
+/*start section 4*/
+.select4{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+ .divtext{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.select4 h2{
+    text-align: center;
+    font-size: 30px;
+    color: #404b9b;
+}
+.onlytable{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+table{
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    height: 250px;  
+    text-align: center;
+} 
+table tbody tr{
+    font-size: 19px;
+}
+ table tbody tr:nth-of-type(even){
+    background: #ccc;
+} 
+/*end section 4*/
+/* start section 5*/
+.select5{
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+}
+.select5 h2{
+    text-align: center;
+    font-size: 30px;
+    color: #404b9b;
+}
+hr{
+    width: 40%;
+    margin-bottom: 20px;
+}
+.alldiv{
+    width: 98%;
+    height: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 14px;
+}
+.newsimg{
+    width: 32%;
+    height: 410px;
+    overflow: hidden;
+    border: 1px solid #000;
+    box-shadow: 1px 1px 5px #000;
+    padding: 10px 0px 0px 5px;
+}
+.newsimg p{
+    font-size: 14px;
+}
+.select5 img{
+    width: 92%;
+    margin-inline: 20px;
+}
+/* end section 5*/
+/* start section 6*/
+.select6{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background: #fddd00;
+}
+.divimg{
+    width: 45%;
+    height: 375px;
+    margin: auto;
+}
+.select6 img{
+    width: 91%;
+}
+.divvideo{
+    width: 45%;
+    height: 375px;
+    margin: auto;
+}
+.select6 iframe{
+    width: 100%;
+    height: 375px;
+}
+/* end sction 6*/
+/* start section 7*/
+.select7{
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+}
+/* end section 7*/  
+/* start footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background: #000;
+    line-height: 50px;
+    text-align: center;
+}
+footer p{
+    color: #fff;
+    margin: 0;
+}
+/*end footer*/
+/* start media query*/
+@media screen and (min-width:768px) and (max-width:1024px){
+/*start header*/
+header nav{
+    width: 70%; 
+}
+nav ul a{
+    font-size: 14px;
+    padding-right: 0px;
+}
+header .icon{
+    width: 27%;
+    padding-top: 8px;
+}
+header img{
+    width: 20%;
+}
+/*end header*/
+    /*start section 1*/
+.select1{
+    height: 375px;
+}
+.banner{
+    height: 375px;
+    clip-path: circle(50% at 50% 50%);
+}
+.banner img{
+    width: 100%;
+    right: 0px;
+}
+/*end section 1*/
+/*start section 2*/
+.select2{
+    height: 500px;
+}
+.all{
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+}
+.block , .block1 , .block2 , .block3{
+    width: 450px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+.block{
+    background:#fff url(../images/swimmingacademy.jpg) no-repeat center/60% ;
+}
+.block1{
+    background:#fff url(../images/footballacademy.jpg) no-repeat center/60%  ;
+}
+.block2{
+    background:#fff url(../images/tennisacademy.jpg) no-repeat center/60%  ;
+}
+.block3{
+    background:#fff url(../images/squashacademy.jpg)no-repeat center/60%  ;
+}
+
+.block3:hover .overlay , .block2:hover .overlay , .block1:hover .overlay , .block:hover .overlay{
+    clip-path: circle(13% at 0% 0% );
+}
+.overlay h2{
+    font-size: 18px;
+}
+/*end section 2*/
+/*start section 3*/
+.select3{
+    height: 600px;
+}
+.collection{
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+}
+.divtex{
+    width: 80%;
+}
+.block5{
+    width: 80%;
+}
+/*end section 3*/
+/* start section 5*/
+.select5{
+    height: 1400px;
+    margin-bottom: 30px;
+}
+.select5 h2{
+    font-size: 25px;
+}
+.alldiv{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+}
+.newsimg{
+    width: 90%;
+    height: 400px;
+    text-align: center;
+}
+.newsimg p{
+    font-size: 15px;
+}
+.select5 img{
+    width: 60%;
+}
+/* start section 6*/
+.select6{
+    height: 850px;
+    flex-direction: column;
+}
+.divimg{
+    width: 85%;
+}
+.select6 img{
+    width: 100%;
+}
+.divvideo{
+    width: 85%;
+ }
+.select6 iframe{
+    width: 100%;
+}
+/* end sction 6*/
+}
+/* end media query*/
